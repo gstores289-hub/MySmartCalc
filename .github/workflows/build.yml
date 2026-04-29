@@ -10,5 +10,3 @@ jobs:
         with:
           buildozer_version: master
           command: buildozer android debug
-          python_version: 3.11
-
