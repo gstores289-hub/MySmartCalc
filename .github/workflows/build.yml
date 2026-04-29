@@ -1,12 +1,12 @@
-name: Build APK
+name: Build
 on: [push]
 jobs:
-  build:
-    runs-on: ubuntu-22.04
+  android:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Build with Buildozer
-        uses: EnisHustla/buildozer-action@v2
+      - name: Build APK
+        uses: s0/buildozer-action@v1
         with:
           buildozer_version: master
           command: buildozer android debug
